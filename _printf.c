@@ -8,7 +8,6 @@ int _printf(const char *format, ...)
 {
 va_list args;
 int  i = 0, j = 0, counter = 0;
-va_start(args, format);
 char_type chars[] = {
 	{'c', p_char},
 	{'s', p_string},
@@ -16,6 +15,7 @@ char_type chars[] = {
 	{'i', p_integer},
 	{NULL, NULL} 
 	};
+va_start(args, format);
 while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
