@@ -19,9 +19,7 @@ while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
 	{
-		_putchar('%');
-		i = i + 2;
-		counter++;
+		_putchar('%'), i = i + 2, counter++;
 	}
 	else if (format[i] == '%')
 	{
