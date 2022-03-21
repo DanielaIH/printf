@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 va_list args;
-int  i = 0, j = 0, counter = 0 ;
+int  i = 0, j = 0, counter = 0, b = 0;/*mira si entra en una funcion*/
 char_type chars[] = {
 	{"c", p_char},
 	{"s", p_string},
@@ -15,23 +15,28 @@ char_type chars[] = {
 	{"i", p_integer},
 	{NULL, NULL}};
 va_start(args, format);
+if (format == NULL || (format[0] == '%' && format[1] == '\0'))
+		return (0);
 while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
-		_putchar('%'), i = i + 2, counter++;
-	else if (format[i] == '%')
+		_putchar('%'), i++, counter++;
+	else if (format[i] == '%' && format[i + 1] != '%' )
 	{
-		j = 0;
+		j = 0, b = 0;
 		while (chars[j].letter != NULL) /* Iterates through chars.letter */
 		{
-			if (chars[j].letter[0] == format[i + 1])
-				counter += chars[i].func(args);
+			if (format[i + 1] == chars[j].letter[0])
+				counter += chars[j].func(args), b = 1, i++;
 			j++;
-		} /*end while*/
+		}/*end while*/
+		if (b == 0)
+			_putchar(format[i]), counter++;
 	} /*end else*/
 	else /*Others chars in format*/
 		_putchar(format[i]), counter++;
-	i++; } /*End While*/
+	i++; 
+	}/*End While*/
 va_end(args);
 return (counter);
 }
