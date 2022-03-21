@@ -13,7 +13,7 @@ char_type chars[] = {
 	{'s', p_string},
 	{'d', p_decimal},
 	{'i', p_integer},
-	{'\0', NULL}};
+	{NULL, NULL}};
 va_start(args, format);
 while (format != NULL && format[i] != '\0')
 	{
