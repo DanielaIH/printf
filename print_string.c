@@ -12,7 +12,7 @@ int p_string(va_list valist)
 
 	c = va_arg(valist, char *);
 	if (c == NULL)
-		c = "(null)";
+		*c = "(null)";
 
 	for (i = 0; *(c + i) != '\0'; i++)
 	{
