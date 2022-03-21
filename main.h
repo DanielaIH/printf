@@ -14,7 +14,7 @@
 
 typedef struct char_func
 {
-	char letter;
+	char *letter;
 	int (*func)(va_list);
 } char_type;
 
