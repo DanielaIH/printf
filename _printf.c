@@ -28,7 +28,7 @@ while (format != NULL && format[i] != '\0')
 		j = 0;
 		while (chars[j].letter != '\0')
 		{
-			if (chars[j].letter == format[i + 1])
+			if (chars[j].letter[0] == format[i + 1])
 				counter += chars[i].func(args);
 			j++;
 		} /*end while*/
