@@ -18,7 +18,7 @@ va_start(args, format);
 while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
-		_putchar('%'), i = i + 2, counter++;
+		_putchar('%'), i++, counter++;
 	else if (format[i] == '%')
 	{
 		j = 0;
