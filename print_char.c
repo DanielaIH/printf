@@ -7,6 +7,7 @@
 
 int p_char(va_list valist)
 {
-	_putchar(va_arg(valist, int));
+	char c = va_arg(valist, int);
+	_putchar(c);
 	return(0);
 }
