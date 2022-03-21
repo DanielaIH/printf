@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 /**
 * p_string - prints a string
 * @valist: valist
@@ -9,7 +10,7 @@ void p_string(va_list valist)
 	char *c;
 	int i;
 
-	c = va_srg(valist, char *);
+	c = va_arg(valist, char *);
 	if (c == NULL)
 		c = "(null)";
 

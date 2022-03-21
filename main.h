@@ -17,5 +17,10 @@ typedef struct char_func
 } char_type;
 
 int _printf(const char *format, ...);
+int p_string(va_list valist);
+int p_decimal(va_list valist);
+int p_integer(va_list valist);
+int p_char(va_list valist);
+int _putchar(char c);
 
 #endif
