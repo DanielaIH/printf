@@ -14,7 +14,7 @@ int p_integer(va_list valist)
 	numero = n;
 	if (ultimo < 0)
 	{
-		_putchar('_');
+		_putchar('-');
 		numero = numero * - 1;
 		n = n * - 1;
 		ultimo = ultimo * - 1;
@@ -37,6 +37,6 @@ int p_integer(va_list valist)
 			cantidad++;
 		}
 	}
-	putchar(ultimo + '0');
+	_putchar(ultimo + '0');
 	return (cantidad);
 }

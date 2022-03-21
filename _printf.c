@@ -32,6 +32,7 @@ while (format != NULL && format[i] != '\0')
 			{
 				chars[i].func(args);
 				counter++;
+				_putchar(counter);
 			}
 			j++;
 		} /*end while*/
