@@ -26,7 +26,7 @@ while (format != NULL && format[i] != '\0')
 	else if (format[i] == '%')
 	{
 		j = 0;
-		while (chars[j].letter != '\0')
+		while (chars[j].letter != NULL) /* Iterates through chars.letter */
 		{
 			if (chars[j].letter[0] == format[i + 1])
 				counter += chars[i].func(args);
