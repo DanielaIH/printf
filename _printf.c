@@ -10,15 +10,15 @@ va_list args;
 int  i = 0, j = 0, counter = 0;
 va_start(args, format);
 char_type chars[] = {
-	{"c", p_char},
-	{"s", p_string},
-	{"d", p_decimal},
-	{"i", p_integer},
+	{'c', p_char},
+	{'s', p_string},
+	{'d', p_decimal},
+	{'i', p_integer},
 	{NULL, NULL} };
 
 while (format != NULL && format[i] != '\0')
 	{
-	if (format[i] == '%' && fotmat[i + 1] == '%')/*Evaluates %%*/
+	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
 	{
 		_putchar('%');
 		i = i + 2;

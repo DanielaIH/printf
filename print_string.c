@@ -5,7 +5,7 @@
 * @valist: valist
 */
 
-void p_string(va_list valist)
+int p_string(va_list valist)
 {
 	char *c;
 	int i;
@@ -14,10 +14,10 @@ void p_string(va_list valist)
 	if (c == NULL)
 		c = "(null)";
 
-	for (i = 0, *(c + i) != '\0'; i++)
+	for (i = 0; *(c + i) != '\0'; i++)
 	{
-		_putchar(*(s + i));
+		_putchar(*(c + i));
 	}
 
-	return (c);
+	return (i);
 }
