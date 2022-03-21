@@ -1,10 +1,8 @@
 #include "main.h"
-
 /**
 * p_nteger - prints an integer
 * @valist: valist
 */
-
 int p_integer(va_list valist)
 {
 	int n = va_arg(valist, int);
@@ -20,7 +18,25 @@ int p_integer(va_list valist)
 		numero = numero * - 1;
 		n = n * - 1;
 		ultimo = ultimo * - 1;
-		i++;
+		cantidad++;
 	}
 	if (numero > 0)
+	{
+		while (numero / 10 != 0)
+		{
+			base = base * 10;
+			numero = numero / 10;
+		}
+		numero = n;
+		while (base > 0)
+		{
+			digito = numero / base;
+			_putchar(digito + '0');
+			numero = numero - (digito * base);
+			base = base / 10;
+			cantidad++;
+		}
+	}
+	putchar(ultimo + '0');
+	return (cantidad);
 }
