@@ -32,15 +32,16 @@ while (format != NULL && format[i] != '\0')
 			{
 				chars[i].func(args);
 				counter++;
-				_putchar(counter);
 			}
 			j++;
 		} /*end while*/
 	} /*end else*/
 	else /*Others chars in format*/
+	{
 		_putchar(format[i]);
-	i++; } /*End While*/
+		counter++;
+	} i++; } /*End While*/
 va_end(args);
-/*_putchar('\n'); */
+_putchar(counter);
 return (counter);
 }
