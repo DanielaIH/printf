@@ -1,5 +1,6 @@
+#include "main.h"
 /**
-* print_string - prints a string
+* p_string - prints a string
 * @valist: valist
 */
 
