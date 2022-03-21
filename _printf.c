@@ -40,6 +40,6 @@ while (format != NULL && format[i] != '\0')
 		_putchar(format[i]);
 	i++; } /*End While*/
 va_end(args);
-_putchar('\n');
+/*_putchar('\n'); */
 return (counter);
 }
