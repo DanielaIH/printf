@@ -1,5 +1,7 @@
+#include "main.h"
+
 /**
-* print_char - prints a char
+* p_char - prints a char
 * @valist: valist
 */
 

@@ -13,7 +13,7 @@
 typedef struct char_func
 {
 	char letter;
-	void (*func)(va_list);
+	int (*func)(va_list);
 } char_type;
 
 int _printf(const char *format, ...);

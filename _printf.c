@@ -32,7 +32,7 @@ while (format != NULL && format[i] != '\0')
 			if (chars[j].letter == format[i + 1])
 			{
 				chars[i].func(args);
-				counter += strlen(args);
+				counter++;
 			}
 			j++;
 		} /*end while*/
