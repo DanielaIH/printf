@@ -14,4 +14,13 @@ int p_integer(va_list valist)
 	int numero, digito;
 	n = n / 10;
 	numero = n;
+	if (ultimo < 0)
+	{
+		_putchar('_');
+		numero = numero * - 1;
+		n = n * - 1;
+		ultimo = ultimo * - 1;
+		i++;
+	}
+	if (numero > 0)
 }
