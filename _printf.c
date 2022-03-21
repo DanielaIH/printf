@@ -37,9 +37,7 @@ while (format != NULL && format[i] != '\0')
 		} /*end while*/
 	} /*end else*/
 	else /*Others chars in format*/
-	{
 		_putchar(format[i]);
-		i++; }
 	i++; } /*End While*/
 va_end(args);
 _putchar('\n');
