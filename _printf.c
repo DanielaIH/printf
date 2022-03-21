@@ -42,6 +42,6 @@ while (format != NULL && format[i] != '\0')
 		counter++;
 	} i++; } /*End While*/
 va_end(args);
-_putchar(counter);
+printf("%i", counter);
 return (counter);
 }
