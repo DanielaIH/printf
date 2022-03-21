@@ -14,8 +14,8 @@ char_type chars[] = {
 	{'s', p_string},
 	{'d', p_decimal},
 	{'i', p_integer},
-	{NULL, NULL} };
-
+	{NULL, NULL} 
+	};
 while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/

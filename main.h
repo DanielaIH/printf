@@ -20,7 +20,7 @@ int _printf(const char *format, ...);
 int p_string(va_list valist);
 int p_decimal(va_list valist);
 int p_integer(va_list valist);
-int p_char(va_list valist);
+void p_char(va_list valist);
 int _putchar(char c);
 
 #endif
