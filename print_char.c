@@ -9,5 +9,5 @@ int p_char(va_list valist)
 {
 	char c = va_arg(valist, int);
 	_putchar(c);
-	return(0);
+	return(1);
 }
