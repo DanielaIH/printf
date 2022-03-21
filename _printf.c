@@ -7,7 +7,7 @@
 int _printf(const char *format, ...)
 {
 va_list args;
-int  i = 0, j = 0, counter = 0;
+int  i = 0, j = 0, counter = 0 ;
 char_type chars[] = {
 	{"c", p_char},
 	{"s", p_string},
@@ -18,9 +18,7 @@ va_start(args, format);
 while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
-	{
 		_putchar('%'), i = i + 2, counter++;
-	}
 	else if (format[i] == '%')
 	{
 		j = 0;
@@ -32,9 +30,8 @@ while (format != NULL && format[i] != '\0')
 		} /*end while*/
 	} /*end else*/
 	else /*Others chars in format*/
-	{
 		_putchar(format[i]), counter++;
-	} i++; } /*End While*/
+	i++; } /*End While*/
 va_end(args);
 return (counter);
 }
