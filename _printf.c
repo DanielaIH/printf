@@ -21,11 +21,7 @@ while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
 		_putchar('%'), i++, counter++;
-<<<<<<< HEAD
 	else if (format[i] == '%' && format[i + 1] != '%' )
-=======
-	else if (format[i] == '%')
->>>>>>> 939b86159bd54a2219fbb7a87709e7c56f1ae4b5
 	{
 		j = 0, b = 0;
 		while (chars[j].letter != NULL) /* Iterates through chars.letter */
