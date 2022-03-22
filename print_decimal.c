@@ -3,6 +3,7 @@
 /**
 * p_decimal - prints a decimal (char)
 * @valist: valist
+* Return: cantidad
 */
 
 int p_decimal(va_list valist)
@@ -12,14 +13,15 @@ int p_decimal(va_list valist)
 	int base = 1;
 	int cantidad = 1;
 	int numero, digito;
+
 	n = n / 10;
 	numero = n;
 	if (ultimo < 0)
 	{
 		_putchar('-');
-		numero = numero * - 1;
-		n = n * - 1;
-		ultimo = ultimo * - 1;
+		numero = numero * -1;
+		n = n * -1;
+		ultimo = ultimo * -1;
 		cantidad++;
 	}
 	if (numero > 0)
@@ -41,4 +43,5 @@ int p_decimal(va_list valist)
 	}
 	_putchar(ultimo + '0');
 	return (cantidad);
+
 }

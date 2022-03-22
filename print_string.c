@@ -3,6 +3,7 @@
 /**
 * p_string - prints a string
 * @valist: valist
+* Return: i
 */
 
 int p_string(va_list valist)

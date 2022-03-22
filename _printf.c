@@ -16,12 +16,12 @@ char_type chars[] = {
 	{NULL, NULL}};
 va_start(args, format);
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return (0);
+	return (0);
 while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
 		_putchar('%'), i++, counter++;
-	else if (format[i] == '%' && format[i + 1] != '%' )
+	else if (format[i] == '%' && format[i + 1] != '%')
 	{
 		j = 0, b = 0;
 		while (chars[j].letter != NULL) /*Iterates through chars.letter*/
@@ -29,14 +29,14 @@ while (format != NULL && format[i] != '\0')
 			if (format[i + 1] == chars[j].letter[0])
 				counter += chars[j].func(args), b = 1, i++;
 			j++;
-		}/*end while*/
+		} /*end while*/
 		if (b == 0)
 			_putchar(format[i]), counter++;
 	} /*end else*/
 	else /*Others chars in format*/
 		_putchar(format[i]), counter++;
-	i++; 
-	}/*End While*/
+	i++;
+	} /*End While*/
 va_end(args);
 return (counter);
 }
