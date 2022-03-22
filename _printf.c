@@ -16,7 +16,7 @@ char_type chars[] = {
 	{NULL, NULL}};
 va_start(args, format);
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-	return (0);
+	return (-1);
 while (format != NULL && format[i] != '\0')
 	{
 	if (format[i] == '%' && format[i + 1] == '%')/*Evaluates %%*/
