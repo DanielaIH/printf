@@ -39,4 +39,6 @@ int p_decimal(va_list valist)
 			cantidad++;
 		}
 	}
+	_putchar(ultimo + '0');
+	return (cantidad);
 }
