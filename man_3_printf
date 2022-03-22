@@ -1,0 +1,9 @@
+.\" Manpage for _printf.
+.\" Contact https://github.com/DanielaIH and https://github.com/Robert-octavo to correct errors.
+.TH _PRINTF 3 "25 March 2022" "1.0" "_PRINTF MAN PAGE"
+.SH NAME
+_printf
+.SH SYNOPSIS
+.TP
+.SH AUTHOR
+Daniela Ibarra (https://github.com/DanielaIH) Robert Octavo (https://github.com/Robert-octavo)
