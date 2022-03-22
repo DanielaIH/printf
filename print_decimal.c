@@ -7,6 +7,5 @@
 
 int p_decimal(va_list valist)
 {
-	_putchar(va_arg(valist, int));
-	return(0);
+	
 }
