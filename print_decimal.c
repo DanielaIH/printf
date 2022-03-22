@@ -29,4 +29,14 @@ int p_decimal(va_list valist)
 			base = base * 10;
 			numero = numero / 10;
 		}
+		numero = n;
+		while (base > 0)
+		{
+			digito = numero / base;
+			_putchar(digito + '0');
+			numero = numero - (digito * base);
+			base = base / 10;
+			cantidad++;
+		}
+	}
 }
