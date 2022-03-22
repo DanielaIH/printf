@@ -9,7 +9,7 @@
 
 .SH DESCRIPTION
 .B _printf()
-	The functions _printf() produce output according to a format as described below.   The  function
+	The _printf() function produces output according to a format as described below.   The  function
 	prints the ARGUMENTS from a function like output to stdout, the standard output stream.
 
 .SH CONVERSION SPECIFIERS
@@ -28,8 +28,11 @@
 	the output will be >>This is an example to print a s.
 
 .SH RETURN VALUE
-    	Upon  successful return, _printf function returns the number of characters printed (excluding the
+    	Upon  successful return, _printf() function returns the number of characters printed (excluding the
 	null byte used to end output to strings).
+
+.SH ERROR
+	On failures, the _printf() function returns (-1).
 
 .SH AUTHORS
 Daniela Ibarra (https://github.com/DanielaIH) Robert Octavo (https://github.com/Robert-octavo)
