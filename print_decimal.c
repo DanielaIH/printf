@@ -22,4 +22,11 @@ int p_decimal(va_list valist)
 		ultimo = ultimo * - 1;
 		cantidad++;
 	}
+	if (numero > 0)
+	{
+		while (numero / 10 != 0)
+		{
+			base = base * 10;
+			numero = numero / 10;
+		}
 }
