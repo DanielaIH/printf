@@ -22,6 +22,7 @@ int p_string(va_list valist);
 int p_decimal(va_list valist);
 int p_integer(va_list valist);
 int p_char(va_list valist);
+int p_bin(va_list valist);
 int _putchar(char c);
 
 #endif
