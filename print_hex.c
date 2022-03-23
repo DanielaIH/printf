@@ -24,25 +24,25 @@ int p_hex(va_list valist)
 		{
 			case 10:
 				_putchar('a');
-				break;
+			break;
 			case 11:
 				_putchar('b');
-				break;
+			break;
 			case 12:
 				_putchar('b');
-				break;
+			break;
 			case 13:
 				_putchar('d');
-				break;
+			break;
 			case 14:
 				_putchar('e');
-				break;
+			break;
 			case 15:
 				_putchar('f');
-				break;
-			defaul:
+			break;
+			default:
 				_putchar(hexa[j] + '0');
-				break;
+			break;
 		}
 	}
 	return (i + 1);
