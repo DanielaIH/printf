@@ -8,13 +8,11 @@
 
 int p_bin(va_list valist)
 {
-int b = va_arg(valist, int);
+unsigned int b = va_arg(valist, int);
 char binary[256];
 char temp;
 int len = 0, i = 0, middle;
 
-if (b < 0)
-	return (-1);
 do {
 	if (b % 2 == 0)
 		binary[len] = '0';
