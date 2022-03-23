@@ -8,7 +8,7 @@
 
 int p_bin(va_list valist)
 {
-unsigned int b = va_arg(valist, int);
+unsigned int b = va_arg(valist, unsigned int);
 char binary[256];
 char temp;
 int len = 0, i = 0, middle;
