@@ -11,7 +11,7 @@ int  i = 0, j = 0, counter = 0, b = 0;/*mira si entra en una funcion*/
 char_type chars[] = {
 	{"c", p_char}, {"s", p_string},	{"d", p_decimal},
 	{"i", p_integer}, {"b", p_bin},	{"o", p_oct},
-	{"x", p_hex}, {"X", p_hexMayus},{NULL, NULL}};
+	{"x", p_hex}, {"X", p_hexMayus}, {"u", p_uinteger}, {NULL, NULL}};
 va_start(args, format);
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 	return (-1);
