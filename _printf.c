@@ -9,11 +9,8 @@ int _printf(const char *format, ...)
 va_list args;
 int  i = 0, j = 0, counter = 0, b = 0;/*mira si entra en una funcion*/
 char_type chars[] = {
-	{"c", p_char},
-	{"s", p_string},
-	{"d", p_decimal},
-	{"i", p_integer},
-	{NULL, NULL}};
+	{"c", p_char}, {"s", p_string},	{"d", p_decimal},
+	{"i", p_integer}, {"b", p_bin},	{NULL, NULL}};
 va_start(args, format);
 if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 	return (-1);
