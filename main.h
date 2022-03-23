@@ -25,6 +25,7 @@ int p_char(va_list valist);
 int p_bin(va_list valist);
 int p_oct(va_list valist);
 int p_hex(va_list valist);
+int p_hexMayus(va_list valist);
 int _putchar(char c);
 
 #endif
