@@ -29,7 +29,7 @@ int p_hex(va_list valist)
 				_putchar('b');
 			break;
 			case 12:
-				_putchar('b');
+				_putchar('c');
 			break;
 			case 13:
 				_putchar('d');
