@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 
 /**
  * struct char_func - struct
@@ -28,5 +29,6 @@ int p_hex(va_list valist);
 int p_hexMayus(va_list valist);
 int p_uinteger(va_list valist);
 int _putchar(char c);
+int _buffer_to_write(char c);
 
 #endif
