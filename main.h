@@ -31,5 +31,6 @@ int p_uinteger(va_list valist);
 int _putchar(char c);
 int _buffer_to_write(char c);
 int p_reverse(va_list valist);
+int p_rot13(va_list valist);
 
 #endif

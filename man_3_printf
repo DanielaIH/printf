@@ -21,6 +21,11 @@
 	d,i    print integers or floats numbers of max and min size of an int type
 	 b     print unsigned integer as binary (base 2)
 	 u     print unsigned integer
+	 o     print a number in octal
+	 x     print a number in hexadecimal format
+	 X     print a number in hexadecimal format
+	 r     print a string in reverse
+	 R     print the rot13'ed string
 
 .SH EXAMPLES
 
