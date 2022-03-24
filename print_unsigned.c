@@ -6,7 +6,7 @@
 */
 int p_uinteger(va_list valist)
 {
-	unsigned long int n = va_arg(valist, int);
+	int n = va_arg(valist, int);
 	int ultimo = n % 10;
 	int base = 1;
 	int cantidad = 1;
