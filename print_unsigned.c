@@ -11,7 +11,7 @@ int p_uinteger(va_list valist)
 	int base = 1;
 	int cantidad = 1;
 	int numero, digito;
-	
+
 	/*if (n < 0)*/
 	/*	n = n * -1;*/
 
