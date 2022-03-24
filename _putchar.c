@@ -6,7 +6,7 @@
  * Return: Success 1
  */
 
-int _buffer_to_write(char c)
+/*int _buffer_to_write(char c)
 {
 	static char buffer[1024];
 	static int i;
@@ -22,7 +22,7 @@ int _buffer_to_write(char c)
 		i++;
 	}
 	return (1);
-}
+}*/
 
 /**
  * _putchar - write the character c

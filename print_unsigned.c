@@ -6,14 +6,14 @@
 */
 int p_uinteger(va_list valist)
 {
-	int n = va_arg(valist, int);
+	unsigned int n = va_arg(valist, int);
 	int ultimo = n % 10;
 	int base = 1;
 	int cantidad = 1;
 	int numero, digito;
 	
-	if (n < 0)
-		n = n * -1;
+	/*if (n < 0)*/
+	/*	n = n * -1;*/
 
 	n = n / 10;
 	numero = n;
