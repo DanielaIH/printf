@@ -1,5 +1,10 @@
 #include <unistd.h>
 #include "main.h"
+/**
+ * _buffer_to_write - Use a local buffer of 1024 chars in order to call write
+ * @c: character
+ * Return: Success 1
+ */
 
 int _buffer_to_write(char c)
 {
