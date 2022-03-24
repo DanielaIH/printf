@@ -11,6 +11,7 @@ int p_hex(va_list valist)
 	unsigned int decimal = va_arg(valist, unsigned int);
 	int i = 0, j = 0;
 	int hexa[200];
+
 	while (decimal >= 16)
 	{
 		hexa[i] = decimal % 16;

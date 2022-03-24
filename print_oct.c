@@ -11,6 +11,7 @@ int p_oct(va_list valist)
 	unsigned int decimal = va_arg(valist, unsigned int);
 	int i = 0, j = 0;
 	int octal[20];
+
 	while (decimal >= 8)
 	{
 		octal[i] = decimal % 8;
