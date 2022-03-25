@@ -33,7 +33,7 @@ int find_hex(char c)
 int p_string_ascii(va_list valist)
 {
 	char *str;
-	int i, j, len = 0;
+	int i, len = 0;
 
 	str = va_arg(valist, char *);
 
