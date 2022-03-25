@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdarg.h>
+
 /**
 * p_string - prints a string
 * @valist: valist
